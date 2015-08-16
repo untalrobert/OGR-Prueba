@@ -1,0 +1,1 @@
+$(document).ready(function(){$("input#submit").click(function(){$.ajax({type:"POST",url:"process.php",data:$("form.contact").serialize(),success:function(t){$("#thanks").html(t),$("#form-content").modal("hide")},error:function(){alert("failure")}})})});
